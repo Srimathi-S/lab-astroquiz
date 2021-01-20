@@ -14,17 +14,13 @@
     All The Best!</p>
      <div class="input">
     <form id="myform" action="${pageContext.request.contextPath}/eligible" method="post">
-       
-            <span class="labelClass">First name: </span><input type="text" name="name" required><br><br>
+      		<span class="labelClass">First name: </span><input type="text" name="name" required><br><br>
             <span class="labelClass">Mobile Number: </span><input type="text" name="Number" required><br><br>
             <span class="labelClass">Age: </span><input type="text" name="age" required><br><br>
             <span class="labelClass">Height: </span><input type="text" name="height" required><br><br>
             <span class="labelClass">Weight: </span><input type="text" name="weight" required><br><br>
             <span class="labelClass">Nationality: </span><input type="text" name="country" required>
-            
-       
-    
-    </form>
+     </form>
      </div>
 <footer>
     <div>

@@ -16,10 +16,12 @@ public class Eligibility extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		
 	String points=request.getParameter("points");
+	EligibiltyCheck eligibiltyCheck=new EligibiltyCheck();
+	boolean eligible=eligibiltyCheck.checkQuiz(points);
 	
-	if(false)
+	if(!eligible)
 	{
 		RequestDispatcher rd=this.getServletContext().getRequestDispatcher("/WEB-INF/views/success.html");
 		rd.forward(request, response);	
